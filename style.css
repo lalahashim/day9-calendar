@@ -1,0 +1,291 @@
+body{
+    background-color: #4A628A;
+    font-family: "Libre Baskerville";
+}
+#day-info {
+    display: none;
+}
+
+.calendar-wrapper{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+.calendar {
+    position: relative;
+    z-index: 1;
+    top: 90px;
+    padding-bottom: 30px;
+}
+.head{
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.week-days{
+    font-size: 13px;
+}
+.month-days {
+    font-size: 10px;
+}
+.month-days div{
+    margin: 5px auto 5px auto;
+    font-size: 10px;
+}
+
+
+h1{
+    color: whitesmoke;
+    text-align: center;
+}
+
+#calendar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    margin: 50px auto 30px auto;
+    border-radius: 20px;
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+#head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    color: #604CC3;
+    font-size: 15px; 
+    margin-bottom: 30px;
+}
+a{
+    cursor: pointer;
+}
+
+#week-days{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+}
+#month-days {
+    display: grid;
+    grid-template-columns: repeat(7, 4fr);
+    color: grey;
+    width: 79%;
+}
+#month-days div{
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 15px;
+}
+
+
+#day-info{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    padding: 5px 30px;
+
+    position: absolute;
+    right: -120px;
+    top: 50px;
+    z-index: 2;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.purple {
+    color: #604CC3;
+    font-size: 20px;
+}
+#week-day{
+    margin-bottom: 0;
+}
+#date{
+    margin-top: 2px;
+    font-size: 25px;
+}
+
+#holiday{
+    margin: 35px auto 35px auto;
+    font-size: 25px;
+}
+
+#heading{
+    margin-bottom: 5px;
+}
+.subtitle{
+    font-size: 12px;
+    color: gray;
+    margin-top: 0;
+}
+.upcoming{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    #calendar{
+        margin: 30px auto 10px auto;
+        width: 90%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    #head{
+        width: 80%;
+        font-size: 13px; 
+        margin-bottom: 20px;
+    }
+    svg{
+        width: 13px;
+        height: 13px;
+    }
+    #week-days{
+        width: 90%;
+        font-size: 10px;
+    }
+    #month-days {
+        width: 99%;
+    }
+    #month-days div{
+        margin: 5px auto 5px auto;
+        font-size: 9px;
+    }
+
+
+    #day-info{
+        width: 90%;
+        padding: 5px 20px;
+    
+        position: absolute;
+        right: 0;
+        top: 280px;
+    }
+    .purple {
+        font-size: 17px;
+    }
+    #date{
+        font-size: 19px;
+    }
+
+    #holiday{
+        margin: 25px auto 25px auto;
+        font-size: 19px;
+    }
+    
+    #heading{
+        margin-bottom: 3px;
+    }
+    .subtitle{
+        font-size: 10px;
+    }
+    .upcoming{
+        font-size: 12px;
+    }
+
+
+    .calendar-wrapper{
+        width: 80%;
+    }
+    .calendar {
+        top: 30px;
+        padding-bottom: 10px;
+    }
+    .head{
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .week-days{
+        font-size: 13px;
+    }
+    .month-days {
+        font-size: 10px;
+    }
+    .month-days div{
+        margin: 5px auto 5px auto;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1100px){
+    #calendar{
+        margin: 40px auto 10px auto;
+        width: 70%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    #head{
+        width: 60%;
+        font-size: 14px; 
+        margin-bottom: 20px;
+    }
+    svg{
+        width: 14px;
+        height: 14px;
+    }
+    #week-days{
+        width: 80%;
+        font-size: 12px;
+    }
+    #month-days {
+        width: 88%;
+    }
+    #month-days div{
+        margin: 7px auto 7px auto;
+        font-size: 10px;
+    }
+
+
+    #day-info{
+        width: 70%;
+        padding: 5px 23px;
+    
+        right: 30px;
+        top: 280px;
+    }
+    .purple {
+        font-size: 18px;
+    }
+    #date{
+        font-size: 21px;
+    }
+
+    #holiday{
+        margin: 25px auto 25px auto;
+        font-size: 21px;
+    }
+    
+    #heading{
+        margin-bottom: 3px;
+    }
+    .subtitle{
+        font-size: 12px;
+    }
+    .upcoming{
+        font-size: 14px;
+    }
+
+
+    .calendar-wrapper{
+        width: 85%;
+    }
+    .calendar {
+        top: 30px;
+        padding-bottom: 10px;
+    }
+    .head{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .week-days{
+        font-size: 12px;
+    }
+    .month-days div{
+        margin: 5px auto 5px auto;
+        font-size: 10px;
+    }   
+}
